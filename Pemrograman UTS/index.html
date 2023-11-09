@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="navbar">
+          <div class="user-logo"><img src="userlogo.jpg"" /></div>
+          <nav>
+            <ul>
+              <li class="selectedLink" name="profile">Profile</li>
+              <li name="about">Background</li>
+              <li name="resume">Experience</li>
+            </ul>
+          </nav>
+        </div>
+        
+      </aside>
+      <div class="card active home" data-profile="">
+          <div class="title">Assalamualaikum Wr.Wb</div>
+          <div class="content">“Selamat pagi.&nbsp;Senang bertemu dengan kalian.&nbsp;Izinkan saya untuk memperkenalkan diri nama saya Mohamad Adria Vanza.&nbsp;
+            Kalian dapat memanggil saya Vanza.&nbsp;Saya anak kedua dari ketiga bersaudara dalam keluarga saya.&nbsp;Saya lahir di Bekasi, 21 Juni 2004. &nbsp;Saya adalah seorang Mahasiswa dari Universitas Pelita Bangsa.&nbsp;&nbsp;Selain menjadi mahasiswa saja juga bekerja sebagai Cashier di Richeese Factory.”</div>
+        </div>
+        <div class="card about" data-about>
+          <div class="title">Riwayat pendidikan</div>
+          <div class="content">SD ISLAM TERPADU AL-LUTHFAH</div>
+          <div class="content">SD SD ISLAM TERPADU MASYITHAH</div>
+          <div class="content">SMP NEGERI 2 CIKARANG SELATAN &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Jun 2016 - Mei 2019 </div>
+          <div class="content">SMA NEGERI 1 CIKARANG SELATAN &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Jun 2019 - Mei 2022 </div>
+          <div class="content">Universitas Pelita Bangsa &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Jun 2019 - Sekarang </div>
+        </div>
+        <div class="card resume" data-resume>
+          <div class="title">Riwayat Pekerjaan</div>
+          <div class="content">Cashier at Richeese Factory &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mei 2023 - Sekarang</div>
+        </div>
+      </main>
+    </div>
+    
+    <script>
+      const showMessage = () => {
+        alert("Hello JavaScript");
+      };
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ 
+<head>
+  <meta charset="utf-8">
+  <title>Simple Calculator using HTML, CSS and JavaScript</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+ 
+<body>
+ 
+<table class="calculator" >
+  <tr>
+    <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+ 
+    <!-- clearScreen() function clears all the values -->
+    <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+  </tr>
+  <tr>
+    <!-- display() function displays the value of clicked button -->
+    <td> <input type="button" value="1" onclick="display('1')" /> </td>
+    <td> <input type="button" value="2" onclick="display('2')" /> </td>
+    <td> <input type="button" value="3" onclick="display('3')" /> </td>
+    <td> <input type="button" value="/" onclick="display('/')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="4" onclick="display('4')" /> </td>
+    <td> <input type="button" value="5" onclick="display('5')" /> </td>
+    <td> <input type="button" value="6" onclick="display('6')" /> </td>
+    <td> <input type="button" value="-" onclick="display('-')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="7" onclick="display('7')" /> </td>
+    <td> <input type="button" value="8" onclick="display('8')" /> </td>
+    <td> <input type="button" value="9" onclick="display('9')" /> </td>
+    <td> <input type="button" value="+" onclick="display('+')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="." onclick="display('.')" /> </td>
+    <td> <input type="button" value="0" onclick="display('0')" /> </td>
+ 
+    <!-- calculate() function evaluates the mathematical expression -->
+    <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+    <td> <input type="button" value="*" onclick="display('*')" /> </td>
+  </tr>
+</table>
+ 
+<script type="text/javascript" src="script.js"></script>
+ 
+</body>
+ 
+</html>
+
